@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">YourBrand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home" class="container-fluid text-center bg-primary text-white py-5">
+        <h1>Welcome to YourBrand</h1>
+        <p class="lead">Your tagline or introduction here</p>
+        <a href="#about-me" class="btn btn-light btn-lg mt-3">Learn More</a>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container my-5">
+        <div class="text-center mb-4">
+            <h2>Portfolio</h2>
+            <p>Some of our recent works</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="images/portfolio1.jpg" alt="Portfolio 1" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/portfolio2.jpg" alt="Portfolio 2" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/portfolio3.jpg" alt="Portfolio 3" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>Brief introduction about yourself or your brand.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/about.jpg" alt="About Me Image" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container my-5">
+        <div class="text-center mb-4">
+            <h2>Testimonials</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <p>"Great service!"</p>
+                <p>- Client 1</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <p>"Highly recommend!"</p>
+                <p>- Client 2</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <p>"Professional and reliable."</p>
+                <p>- Client 3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <div class="text-center mb-4">
+            <h2>Contact Me</h2>
+            <p>Get in touch for more information</p>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white text-center py-3">
+        <p>&copy; 2024 YourBrand. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

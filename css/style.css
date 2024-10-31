@@ -1,83 +1,109 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-}
-
 /* Navbar */
 .navbar {
-    padding: 1rem 2rem;
+    background-color: white;
+    padding: 20px 0;
 }
 
-.navbar-brand {
-    font-weight: bold;
-    color: #007bff;
+.navbar-brand img {
+    max-height: 30px;
 }
 
 .navbar-nav .nav-link {
     color: #333;
-    transition: color 0.3s ease;
+    margin-right: 15px;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #007bff;
+.navbar-nav .btn-outline-primary {
+    color: #6a0dad;
+    border-color: #6a0dad;
 }
 
 /* Hero Section */
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 80px 0;
+.hero {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 50px 0;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+.hero-text {
+    flex: 1;
+    padding: 15px;
 }
 
-header p {
-    font-size: 1.2rem;
+.hero-text p {
+    color: #333;
+    font-size: 1.2em;
 }
 
-header .btn-light {
-    color: #007bff;
-    background-color: #ffffff;
-    border: none;
-}
-
-header .btn-light:hover {
-    background-color: #f0f0f0;
-}
-
-/* Portfolio */
-#portfolio h2, #about-me h2, #testimonials h2, #contact h2 {
-    font-size: 2rem;
-    font-weight: bold;
+.hero-text h1 {
+    font-size: 2.5em;
     color: #333;
 }
 
-/* Testimonials */
-#testimonials p {
-    font-style: italic;
-    color: #555;
+.hero-text .highlight {
+    color: #6a0dad;
 }
 
-/* Contact Section */
-form label {
-    font-weight: bold;
+.hero-text a.btn-primary {
+    background-color: #6a0dad;
+    border-color: #6a0dad;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 80%;
+    border-radius: 15px;
+}
+
+/* Responsive adjustments for hero */
+@media (max-width: 767px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+}
+
+/* Expertise Section */
+.expertise p {
+    font-size: 1em;
+    color: #6c757d;
+}
+
+.expertise h2 {
+    font-size: 2em;
     color: #333;
 }
 
-form button {
-    background-color: #007bff;
+.expertise .card {
     border: none;
+    background-color: #f8f9fa;
+    transition: transform 0.3s;
 }
 
-form button:hover {
-    background-color: #0056b3;
+.expertise .card:hover {
+    transform: translateY(-5px);
 }
 
-/* Footer */
-footer {
-    background-color: #222;
-    color: #fff;
+.expertise .card img {
+    width: 40px; /* Adjust as needed */
+}
+
+.expertise .card-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+}
+
+.expertise .card-text {
+    font-size: 0.9em;
+    color: #6c757d;
 }
